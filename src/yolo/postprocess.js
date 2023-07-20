@@ -145,6 +145,7 @@ function yoloHead(
   const anchorsTensor = tf.reshape(anchors, [1, 1, numAnchors, 2]);
 
   const gridShape = feats.shape.slice(1, 3); // height, width
+  console.log("feats shape",feats.shape)
 
   const gridY = tf.tile(tf.reshape(tf.range(0, gridShape[0]), [-1, 1, 1, 1]), [1, gridShape[1], 1, 1]);
   const gridX = tf.tile(tf.reshape(tf.range(0, gridShape[1]), [1, -1, 1, 1]), [gridShape[0], 1, 1, 1]);

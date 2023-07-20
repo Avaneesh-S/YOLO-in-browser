@@ -79,4 +79,10 @@ export default [
   'teddy bear',
   'hair drier',
   'toothbrush',
+  '10rupees',
+  '100rupees',
+  '20rupees',
+  '200rupees',
+  '50rupees',
+  'Kangaroo'
 ];

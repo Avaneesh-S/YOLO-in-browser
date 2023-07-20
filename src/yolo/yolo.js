@@ -29,6 +29,7 @@ export default class Yolo {
 
       let imageTensor = tf.fromPixels(canvas, 3);
       imageTensor = imageTensor.expandDims(0).toFloat().div(tf.scalar(255));
+      console.log("shape is ",this.model.predict(imageTensor))
       return this.model.predict(imageTensor);
     });
 
