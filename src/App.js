@@ -8,7 +8,7 @@ import ModelSelector from './components/model-selector/ModelSelector';
 
 // Material UI imports
 import {MuiThemeProvider} from '@material-ui/core/styles';
-import Yolo from './yolo/yolo';
+import Yolo from './yolo/load_model';
 
 class App extends Component {
   state = {
@@ -16,12 +16,12 @@ class App extends Component {
     viewsManager: undefined,
   };
 
-  loadModel = (version, callback) => {
+  loadModel = (version,callback) => {
     console.log('loading model...');
-    let yolo = new Yolo(version);
+    let yolo = new Yolo();
     yolo.loadModel().then(
         () => {
-          console.log('¡model ' + version + ' loaded!');
+          console.log('¡model V3 loaded!');
           this.setState({yolo: yolo});
           this.setViews();
           callback();

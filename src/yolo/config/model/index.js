@@ -1,4 +1,4 @@
-const modelsPath = "https://raw.githubusercontent.com/CristianAbrante/YOLO-in-browser/master/src/yolo/config/model/";
+const modelsPath = "https://cors-anywhere.herokuapp.com/https://github.com/Avaneesh-S/YOLO-in-browser/tree/master/src/yolo/config/model/";
 const modelFile = "model.json";
 
 /**
